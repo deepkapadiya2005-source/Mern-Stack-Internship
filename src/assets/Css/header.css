@@ -1,0 +1,15 @@
+.header {
+  height: 70px;
+  background-color: #1e3a8a;   /* simple blue */
+  display: flex;
+  align-items: center;         /* vertical center */
+  justify-content: center;     /* horizontal center */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-title {
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

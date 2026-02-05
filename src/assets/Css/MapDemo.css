@@ -1,0 +1,40 @@
+.city-table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.city-table th {
+  background: #1f2937;
+  color: white;
+  padding: 14px;
+}
+
+.city-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.city-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+.city-img {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+    
+
+.city-table img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;   /* prevents image distortion */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}

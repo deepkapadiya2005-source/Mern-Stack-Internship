@@ -1,0 +1,42 @@
+.stats-container {
+  width: 95%;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.stats-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  margin: 20px 0 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.stats-table th,
+.stats-table td {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.stats-table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+.stats-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
