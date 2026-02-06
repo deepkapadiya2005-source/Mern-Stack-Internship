@@ -1,24 +1,36 @@
-import { MapDemo6 } from "./Components/MapDemo6";
-import { MapDemo7 } from "./Components/MapDemo7";
-import { MapDemo8 } from "./Components/MapDemo8";
-import { MapDemo9 } from "./Components/MapDemo9";
-import { MapDemo10 } from "./Components/MapDemo10";
-import {CareerStats} from "./Components/CareerStats";
+import { Routes, Route } from "react-router-dom";
+import { TeamsList } from "./Components/TeamsList";
+import { India } from "./Components/India";
+import { Australia } from "./Components/Australia";
+import { England } from "./Components/England";
+import { Csk } from "./Components/Csk";
+import { Rcb } from "./Components/Rcb";
+import { Mi } from "./Components/Mi";
+import { Kkr } from "./Components/Kkr";
+import { Gt } from "./Components/Gt";
+import { Srh } from "./Components/Srh";
+import { Rr } from "./Components/Rr";
 import {Portfolio} from "./Components/Portfolio";
-import {HeaderComponent} from "./Components/HeaderComponent";
 
 function App() {
   return (
     <>
-    <HeaderComponent></HeaderComponent>
-     <Portfolio></Portfolio>
-     <CareerStats></CareerStats>
-     <MapDemo6></MapDemo6> 
-     <MapDemo7></MapDemo7>
-     <MapDemo8></MapDemo8>
-     <MapDemo9></MapDemo9>
-     <MapDemo10></MapDemo10>
-     
+      <TeamsList />
+
+      <Routes>
+        <Route path="/teams/india" element={<India />} />
+        <Route path="/teams/australia" element={<Australia />} />
+        <Route path="/teams/england" element={<England />} />
+        <Route path="/teams/csk" element={<Csk />} />
+        <Route path="/teams/rcb" element={<Rcb />} />
+        <Route path="/teams/mi" element={<Mi />} />
+        <Route path="/teams/kkr" element={<Kkr />} />
+        <Route path="/teams/gt" element={<Gt />} />
+        <Route path="/teams/srh" element={<Srh />} />
+        <Route path="/teams/rr" element={<Rr />} />
+
+        <Route path="*" element={<Portfolio/>} />
+      </Routes>
     </>
   );
 }
